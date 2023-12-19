@@ -9,6 +9,10 @@ import { getAveragePrice, getEmailNotifType, getHighestPrice, getLowestPrice } f
 import { NextResponse } from "next/server"
 import { cursorTo } from "readline"
 
+export const maxDuration = 300 //5 minutes since its in secs
+export const dynamic = 'force-dynamic'
+export const revalidate = 0
+
 export async function GET() {
     try {
         connectToDB()
