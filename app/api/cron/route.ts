@@ -9,7 +9,7 @@ import { getAveragePrice, getEmailNotifType, getHighestPrice, getLowestPrice } f
 import { NextResponse } from "next/server"
 import { cursorTo } from "readline"
 
-export const maxDuration = 10 //5 minutes since its in secs
+export const maxDuration = 10 //10 seconds since limit is 1-10
 export const dynamic = 'force-dynamic'
 export const revalidate = 0
 
