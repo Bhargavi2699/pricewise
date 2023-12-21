@@ -75,7 +75,7 @@ export async function GET(request: Request) {
             message: "Ok",
             data: updatedProducts
         })
-    } catch (error) {
+    } catch (error: any) {
         throw new Error(`Error in GET: ${error}`)
     }
 }
